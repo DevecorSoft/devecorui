@@ -9,10 +9,12 @@ on:
       - ".github/workflows/publish.yml"
 
 jobs:
+
   prepare:
     uses: Devecorsoft/workflows/.github/workflows/read-version-node.yml@v1
     with:
       package_json: "./package.json"
+
   publish:
     runs-on: ubuntu-latest
     needs: prepare
