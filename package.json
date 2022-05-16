@@ -1,6 +1,12 @@
 {
   "name": "devecorui",
   "version": "0.0.0",
+  "main": "./src/index.js",
+  "files": [
+    "src/components/icons/*",
+    "src/components/DeHeader.vue",
+    "src/index.js"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
