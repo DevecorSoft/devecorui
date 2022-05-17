@@ -33,8 +33,9 @@ jobs:
         run: npm run test:unit
 
       - name: e2e test
-        if: ${{ false }}
-        run: npm run test:e2e:ci
+        run: |
+          npm run build
+          npm run test:e2e:ci
 
   verify:
     needs:
