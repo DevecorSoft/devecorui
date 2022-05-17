@@ -1,12 +1,13 @@
 {
   "name": "@Devecorsoft/devecorui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./src/index.js",
   "repository": "git@github.com:DevecorSoft/devecorui.git",
   "files": [
     "src/components/icons/*",
     "src/components/DeHeader.vue",
-    "src/index.js"
+    "src/index.js",
+    "src/assets/base.css"
   ],
   "publishConfig": {
     "registry":"https://npm.pkg.github.com"
