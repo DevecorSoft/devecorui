@@ -7,6 +7,9 @@
     "src/components/DeHeader.vue",
     "src/index.js"
   ],
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
