@@ -22,4 +22,12 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  test: {
+    coverage: {
+      reporter: ["text", "json", "html"],
+    },
+    deps: {
+      inline: ["element-plus"],
+    },
+  },
 });
