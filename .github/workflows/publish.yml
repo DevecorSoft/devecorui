@@ -1,4 +1,4 @@
-name: github packages
+name: "publish to github packages"
 on:
   push:
     branches: [main]
@@ -9,11 +9,11 @@ on:
       - ".github/workflows/publish.yml"
 
 jobs:
-
   prepare:
-    uses: Devecorsoft/workflows/.github/workflows/read-version-node.yml@v1
+    uses: Devecorsoft/workflows/.github/workflows/read-version.yml@read-v1
     with:
-      package_json: "./package.json"
+      platform: "nodejs"
+      path: "./package.json"
 
   publish:
     runs-on: ubuntu-latest
