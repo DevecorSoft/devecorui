@@ -1,3 +1,3 @@
-import DeHeader from "./components/Deheader.vue";
+import DeHeader from "./components/DeHeader.vue";
 
 export { DeHeader };

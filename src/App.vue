@@ -1,5 +1,5 @@
 <script setup>
-import DeHeader from "./components/DeHeader.vue";
+import { DeHeader } from ".";
 </script>
 
 <template>
