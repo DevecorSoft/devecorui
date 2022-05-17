@@ -1,7 +1,8 @@
 {
-  "name": "devecorui",
+  "name": "@Devecorsoft/devecorui",
   "version": "0.0.1",
   "main": "./src/index.js",
+  "repository": "git@github.com:DevecorSoft/devecorui.git",
   "files": [
     "src/components/icons/*",
     "src/components/DeHeader.vue",
