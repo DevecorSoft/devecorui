@@ -33,6 +33,7 @@ jobs:
         run: npm run test:unit
 
       - name: e2e test
+        if: ${{ false }}
         run: |
           npm run build
           npm run test:e2e:ci
@@ -58,5 +59,7 @@ jobs:
       - name: Publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm publish
+        run: |
+          npm run build
+          npm publish
       
