@@ -46,6 +46,17 @@ jobs:
     with:
       current: ${{ needs.prepare.outputs.version }}
       destination: "git-tag"
+
+  tagging:
+    needs: verify
+    runs-on: ubuntu-latest
+    steps:
+      - name: tagging
+        run: |
+          git config --local user.name "bot"
+          git config --local user.email "bot@github.com"
+          git tag ${{ needs.prepare.outputs.version }}
+          git push origin --tags
   
   publish:
     needs:
