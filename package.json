@@ -1,14 +1,18 @@
 {
   "name": "@Devecorsoft/devecorui",
-  "version": "0.0.3",
-  "main": "./src/index.js",
+  "version": "0.0.4",
+  "main": "./dist/devecorui.umd.js",
+  "module": "./dist/devecorui.es.js",
   "repository": "git@github.com:DevecorSoft/devecorui.git",
   "files": [
-    "src/components/icons/*",
-    "src/components/DeHeader.vue",
-    "src/index.js",
-    "src/assets/base.css"
+    "dist"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/devecorui.es.js",
+      "require": "./dist/devecorui.umd.js"
+    }
+  },
   "publishConfig": {
     "registry":"https://npm.pkg.github.com"
   },

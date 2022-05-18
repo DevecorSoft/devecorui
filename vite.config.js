@@ -1,6 +1,7 @@
 import { fileURLToPath, URL } from "url";
 
 import { defineConfig } from "vite";
+import path from "path";
 import vue from "@vitejs/plugin-vue";
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
@@ -28,6 +29,21 @@ export default defineConfig({
     },
     deps: {
       inline: ["element-plus"],
+    },
+  },
+  build: {
+    lib: {
+      entry: path.resolve(__dirname, "src/index.js"),
+      name: "devecorui",
+      fileName: (format) => `devecorui.${format}.js`,
+    },
+    rollupOptions: {
+      external: ["vue"],
+      output: {
+        globals: {
+          vue: "Vue",
+        },
+      },
     },
   },
 });
