@@ -1,6 +1,6 @@
 {
   "name": "@Devecorsoft/devecorui",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "./dist/devecorui.umd.js",
   "module": "./dist/devecorui.es.js",
   "repository": "git@github.com:DevecorSoft/devecorui.git",
