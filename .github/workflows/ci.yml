@@ -18,6 +18,7 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
+          corepack enable
           yarn install
           cd react
           yarn build
