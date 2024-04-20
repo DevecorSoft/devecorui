@@ -2,6 +2,8 @@ const path = require("node:path");
 module.exports = {
   title: 'devecor-ui',
   assetsDir: 'assets',
+  styleguideDir: 'dist',
+  components: 'src/components/*/index.{ts,tsx}',
   getExampleFilename(componentPath) {
     return path.dirname(componentPath) + '/README.md'
   },
@@ -11,5 +13,6 @@ module.exports = {
   },
   styleguideComponents: {
     LogoRenderer: path.join(__dirname, 'styleguide/components/Logo'),
-  }
+  },
+  propsParser: require("react-docgen-typescript").parse,
 }

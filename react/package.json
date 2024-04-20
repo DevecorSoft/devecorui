@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "styleguidist server",
+    "build": "sh -c 'for i in src/components/*; do vite build $i -c vite.config.mts; done'",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.24.1",
+    "@babel/preset-typescript": "^7.24.1",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
@@ -23,6 +24,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "react-docgen-typescript": "^2.2.2",
     "react-styleguidist": "^13.1.2",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
