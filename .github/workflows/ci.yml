@@ -15,4 +15,4 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           cd react
-          echo ${{github.event_path}}
+          cat ${{github.event_path}}
