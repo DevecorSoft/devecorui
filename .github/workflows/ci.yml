@@ -1,0 +1,17 @@
+name: ci
+on:
+  push:
+    paths:
+      - react/src/components
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v4
+
+      - name: Publish
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          cd react
+          echo ${{github.event_path}}
