@@ -13,13 +13,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'yarn'
-          cache-dependency-path: yarn.lock
 
       - name: Publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
+          corepack enable
+          yarn -v
           yarn install
           cd react
           yarn build
