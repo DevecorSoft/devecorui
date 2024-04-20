@@ -3885,12 +3885,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"header@workspace:react/src/components/header":
-  version: 0.0.0-use.local
-  resolution: "header@workspace:react/src/components/header"
-  languageName: unknown
-  linkType: soft
-
 "hpack.js@npm:^2.1.6":
   version: 2.1.6
   resolution: "hpack.js@npm:2.1.6"
