@@ -3,11 +3,12 @@ on:
   push:
     paths:
       - react/src/components/**
+      - .github/workflows/**
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Publish
         env:
