@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "styleguidist server",
     "build": "sh -c 'for i in src/components/*; do vite build $i -c vite.config.mts; done'",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "publish:all": "sh -c 'for i in src/components/*; do yarn publish; done'"
   },
   "dependencies": {
     "react": "^18.2.0",

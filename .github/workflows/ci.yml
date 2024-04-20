@@ -15,4 +15,5 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           cd react
-          cat ${{github.event_path}}
+          yarn build
+          yarn publish:all
