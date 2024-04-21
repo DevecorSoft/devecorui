@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "styleguidist server",
-    "build": "sh -c 'for i in src/components/*; do vite build $i -c vite.config.mts; done'",
+    "build": "./build.sh",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "publish:all": "sh -c 'cwd=$PWD; for i in src/components/*; do cd $cwd/$i; npm publish --access public; done'"
   },
