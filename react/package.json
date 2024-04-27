@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "styleguidist server",
     "build": "./build.sh",
-    "test": "cypress run --component",
+    "test": "yarn build && yarn cypress run --component",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "publish:all": "sh -c 'cwd=$PWD; for i in src/components/*; do cd $cwd/$i; npm publish --access public; done'"
   },

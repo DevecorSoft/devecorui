@@ -21,6 +21,5 @@ jobs:
           corepack enable
           yarn install
           cd react
-          yarn build
           yarn test
           yarn publish:all
