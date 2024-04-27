@@ -539,7 +539,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@devecorui/colors@workspace:^, @devecorui/colors@workspace:react/src/components/colors":
+"@devecorui/colors@^1.0.1, @devecorui/colors@workspace:react/src/components/colors":
   version: 0.0.0-use.local
   resolution: "@devecorui/colors@workspace:react/src/components/colors"
   languageName: unknown
@@ -549,7 +549,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@devecorui/divider@workspace:react/src/components/divider"
   dependencies:
-    "@devecorui/colors": "workspace:^"
+    "@devecorui/colors": ^1.0.1
   languageName: unknown
   linkType: soft
 

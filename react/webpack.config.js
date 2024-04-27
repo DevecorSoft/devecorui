@@ -9,7 +9,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: [
-              '@babel/react',
+              ['@babel/react', {runtime: 'automatic'}],
               '@babel/preset-typescript'
             ]
           }
