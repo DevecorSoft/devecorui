@@ -2,7 +2,9 @@
   "name": "@devecorui/circle",
   "packageManager": "yarn@3.3.1",
   "main": "dist/circle",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "version": "0.0.2"
 }
