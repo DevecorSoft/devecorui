@@ -3,7 +3,6 @@ module.exports = {
   title: 'devecor-ui',
   assetsDir: 'assets',
   styleguideDir: 'dist',
-  components: 'src/components/*/index.{ts,tsx}',
   getExampleFilename(componentPath) {
     return path.dirname(componentPath) + '/README.md'
   },
@@ -15,4 +14,12 @@ module.exports = {
     LogoRenderer: path.join(__dirname, 'styleguide/components/Logo'),
   },
   propsParser: require("react-docgen-typescript").parse,
+  pagePerSection: true,
+  sections: [{
+    name: 'Devecorui',
+    description: 'On-Demand Simplicity, Lightweight Brilliance: Crafting Your Ideal Interface with Ease!',
+    usageMode: 'expand',
+    components: 'src/components/*/index.{ts,tsx}',
+    sectionDepth: 1
+  }]
 }

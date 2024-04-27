@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'index.ts',
-      formats: ['cjs', 'es']
+      formats: ['es']
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'styled-components'],
