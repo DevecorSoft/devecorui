@@ -536,6 +536,10 @@ __metadata:
 "@devecorui/circle@workspace:react/src/components/circle":
   version: 0.0.0-use.local
   resolution: "@devecorui/circle@workspace:react/src/components/circle"
+  peerDependencies:
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    styled-components: ^6.1.8
   languageName: unknown
   linkType: soft
 
@@ -550,6 +554,10 @@ __metadata:
   resolution: "@devecorui/divider@workspace:react/src/components/divider"
   dependencies:
     "@devecorui/colors": ^1.0.1
+  peerDependencies:
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    styled-components: ^6.1.8
   languageName: unknown
   linkType: soft
 
