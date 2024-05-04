@@ -6,9 +6,12 @@ export const colors = {
     pine: '#024b40',
     poppy: '#fe5858'
   },
-  functional: {},
+  functional: {
+    seaGreen: '#42b983'
+  },
   neutral: {
     grey: '#e8e8e8',
-    white: '#ffffff'
+    white: '#ffffff',
+    black: '#000000'
   }
 }
