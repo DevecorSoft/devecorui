@@ -7,7 +7,8 @@ export const colors = {
     poppy: '#fe5858'
   },
   functional: {
-    seaGreen: '#42b983'
+    seaGreen: '#42b983',
+    shadow: 'rgba(0,0,0,0.2)'
   },
   neutral: {
     grey: '#e8e8e8',
