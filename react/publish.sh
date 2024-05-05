@@ -9,7 +9,7 @@ for dir in $dirs; do
   if expr "$dir" : ^react/src/components > /dev/null; then
     echo "publishing $dir"
     cd $cwd/$dir
-#    npm publish --access public
+    npm publish --access public
     echo "published $dir"
   fi
 done
