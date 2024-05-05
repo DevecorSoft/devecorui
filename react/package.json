@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "styleguidist server",
-    "build": "./build.sh",
+    "build": "sh ./build.sh",
     "test": "yarn build && yarn cypress run --component",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "publish:all": "./publish.sh"
+    "publish:all": "sh ./publish.sh"
   },
   "dependencies": {
     "react": "^18.2.0",
