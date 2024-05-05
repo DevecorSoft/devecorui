@@ -1,4 +1,4 @@
-import { Card } from "../card.tsx";
+import { Card } from "../card";
 
 describe('card', () => {
   it('should render card', () => {

@@ -537,7 +537,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@devecorui/card@workspace:react/src/components/card"
   dependencies:
-    "@devecorui/colors": ^1.0.1
+    "@devecorui/colors": ^1.3.0
   peerDependencies:
     react: ^18.2.0
     react-dom: ^18.2.0
@@ -555,7 +555,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@devecorui/colors@^1.0.1, @devecorui/colors@workspace:react/src/components/colors":
+"@devecorui/colors@^1.0.1, @devecorui/colors@^1.3.0, @devecorui/colors@workspace:react/src/components/colors":
   version: 0.0.0-use.local
   resolution: "@devecorui/colors@workspace:react/src/components/colors"
   languageName: unknown
