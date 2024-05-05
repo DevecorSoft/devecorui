@@ -1,8 +1,9 @@
 dirs=$(git log -1 --name-only --pretty=format:'' |
  xargs -I {} dirname {} |
+  grep -v "__tests__" |
   uniq
 )
-cwd=$PWD
+cwd=$(dirname $PWD)
 
 for dir in $dirs; do
   if expr "$dir" : ^react/src/components > /dev/null; then
